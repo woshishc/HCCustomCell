@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>content</key>
-		<string>哈哈哈哈哈哈哈哈哈哈</string>
+		<string>哈哈哈哈哈哈哈哈哈哈测试</string>
 		<key>imageName</key>
 		<string>Spaceship.png</string>
 	</dict>
@@ -22,13 +22,13 @@
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</string>
+		<string>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈随便！</string>
 		<key>imageName</key>
 		<string>Spaceship.png</string>
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>哈哈哈哈哈哈哈哈哈哈</string>
+		<string>哈哈哈哈哈哈哈哈哈哈㎡</string>
 		<key>imageName</key>
 		<string>Spaceship.png</string>
 	</dict>
@@ -40,13 +40,13 @@
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>哈哈哈哈哈哈哈哈哈哈</string>
+		<string>哈哈哈哈哈哈哈哈哈哈ABC</string>
 		<key>imageName</key>
 		<string>Spaceship.png</string>
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>哈哈哈哈哈哈哈哈哈哈</string>
+		<string>哈哈哈哈哈哈哈哈哈哈123</string>
 		<key>imageName</key>
 		<string>Spaceship.png</string>
 	</dict>

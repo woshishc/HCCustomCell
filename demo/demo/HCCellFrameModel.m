@@ -26,17 +26,22 @@
     attrDic[NSFontAttributeName] = [UIFont systemFontOfSize:13.f];
     
     CGFloat maxWidth = [UIScreen mainScreen].bounds.size.width - labelX * 2;
-    CGFloat width = 0;
-    CGFloat height = 0;
-    CGRect rect = [str boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT) options:NSStringDrawingUsesDeviceMetrics attributes:attrDic context:nil];
+    
+    CGRect rect = [str boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrDic context:nil];
+    
+    CGFloat height = rect.size.height;
+    CGFloat width = maxWidth;
+    
     if (rect.size.width >= maxWidth) {
         //多行
-        height = [str boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrDic context:nil].size.height;
-        width = maxWidth;
+        self.oneLine = NO;
     }else{
         //一行
+        paragraphStyle.lineSpacing = 0;
+        rect = [str boundingRectWithSize:CGSizeMake(maxWidth, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrDic context:nil];
         height = rect.size.height;
         width = rect.size.width;
+        self.oneLine = YES;
     }
     _labelFrame = CGRectMake(labelX, labelY, width, height);
     

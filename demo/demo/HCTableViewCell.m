@@ -77,8 +77,12 @@
 - (void)setSubviewValues{
     //正文
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineSpacing = 14;
     
+    if (_frameModel.isOneLine) {
+        paragraphStyle.lineSpacing = 0;
+    }else{
+        paragraphStyle.lineSpacing = 14;
+    }
     NSString *str = _frameModel.dataModel.content;
     NSMutableDictionary *attrDic = [NSMutableDictionary dictionary];
     attrDic[NSParagraphStyleAttributeName] = paragraphStyle;

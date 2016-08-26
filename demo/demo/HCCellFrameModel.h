@@ -31,4 +31,9 @@
  */
 @property (nonatomic, assign) CGFloat cellHeight;
 
+/**
+ *  label上是否仅仅只有一行文字
+ */
+@property (nonatomic, assign, getter=isOneLine) BOOL oneLine;
+
 @end
